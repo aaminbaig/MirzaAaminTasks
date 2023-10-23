@@ -22,7 +22,7 @@
                 Console.Write("\r\nEnter second number: ");
                 int num2 = Int32.Parse(Console.ReadLine());
 
-                int sum = Addition(num1, num2);
+                int sum = Calculations.Addition(num1, num2);
                 Console.WriteLine(sum);
                 break;
 
@@ -33,7 +33,7 @@
                 Console.Write("\r\nEnter second number: ");
                 int num4 = Int32.Parse(Console.ReadLine());
 
-                int sub = Subtraction(num3, num4);
+                int sub = Calculations.Subtraction(num3, num4);
                 Console.WriteLine(sub);
                 break;
 
@@ -44,7 +44,7 @@
                 Console.Write("\r\nEnter second number: ");
                 int num6 = Int32.Parse(Console.ReadLine());
 
-                int mul = Multiplication(num5, num6);
+                int mul = Calculations.Multiplication(num5, num6);
                 Console.WriteLine(mul);
                 break;
 
@@ -55,7 +55,7 @@
                 Console.Write("\r\nEnter second number: ");
                 int num8 = Int32.Parse(Console.ReadLine());
 
-                int div = Division(num7, num8);
+                int div = Calculations.Division(num7, num8);
                 Console.WriteLine(div);
                 break;
 
@@ -70,7 +70,10 @@
 
         }
     }
+}
 
+public static class Calculations
+{
     static public int Addition(int num1, int num2)
     {
         int sum = num1 + num2;
