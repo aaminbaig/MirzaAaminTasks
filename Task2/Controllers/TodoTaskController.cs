@@ -9,14 +9,6 @@ namespace Task2.Controllers
     public class TodoTaskController : ControllerBase
     {
 
-        private static List<Todo> TodoList = new List<Todo>
-        {
-            new Todo { Title = "this had to be done.", IsCompleted = false , CreatedDate = DateTime.Now, UpdatedDate = DateTime.Now},
-            new Todo { Title = "huzaifa is the ....", IsCompleted = false , CreatedDate = DateTime.Now, UpdatedDate = DateTime.Now},
-            new Todo { Title = "nothing is here.", IsCompleted = false , CreatedDate = DateTime.Now, UpdatedDate = DateTime.Now}
-
-        };
-
         private readonly TaskDbContext _dbContext;
 
         public TodoTaskController(TaskDbContext dbContext)
