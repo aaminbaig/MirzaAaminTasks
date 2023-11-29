@@ -7,6 +7,7 @@ public class Todo
     public Guid Id { get; set; }
     public string? Title { get; set; }
     public bool IsCompleted { get; set; }
+    public int CreatedByUser { get; set; }
     public DateTime CreatedDate { get; set; }
     public DateTime UpdatedDate { get; set; }
 }
