@@ -5,7 +5,7 @@
 namespace Task2.Migrations
 {
     /// <inheritdoc />
-    public partial class secondmigration : Migration
+    public partial class initialmigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
